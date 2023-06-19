@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barriosapp</title>
+    <link rel="shortcut icon" href="./images/favicom.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="">
+</head>
+<body>
+    
+    <header class="hero">
+      <nav class="nav container">
+         <div class="nav__logo">
+            <h2 class="nav__title">Barriosapp.</h2>
+         </div>
+
+         <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="#" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="#" class="nav__links">Acerca de</a>
+            </li>
+            <li class="nav__items">
+                <a href="#" class="nav__links">Contacto</a>
+            </li>
+            <li class="nav__items">
+                <a href="#" class="nav__links">Blog</a>
+            </li>
+
+            <img src="./images/close.svg" class= "nav__close" alt=""> 
+         </ul>
+
+         <div class="nav__menu">
+            <img src="./images/menu.svg" class="nav__img" alt="">
+         </div>
+         </nav>
+         <section class="hero__container container">
+            <h1 class="hero__title">Barriosapp conectando las pequeñas empresas.</h1>
+            <p class="hero__paragraph">Conecta con tus clientes con solo un click</p>
+            <a href="#" class="cta">Comienza ahora</a>
+         </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Descripción general
+                Estas aplicaciones tiene como propósito informatizar las pequeñas tiendas de venta frutas y verduras en
+                Latinoamérica y España. La idea es facilitar el trabajo de la tienda y la comunicación con sus clientes.</h2>
+            <p class="about__paragraph">La aplicación de tienda “Barriosapp” se podrá descargar gratuitamente de google play.
+                La primera vez que se ejecute en el teléfono aparecerá la pantalla “Nueva tienda” que permite registrar
+                una nueva tienda o registrar el teléfono con una tienda ya existente.
+                Una vez registrada esta pantalla nunca volverá a aparecer. La única forma de ver esta pantalla
+                nuevamente es desinstalando e instalando la App.
+                Pantalla Nueva Tienda
+                El nombre de la tienda es el que verán las aplicaciones clientes.
+                El correo electrónico es la clave única de la tienda.
+                La dirección postal debería ser un link de google maps.
+                Pantalla Lista</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/shape.svg" class="about__icon" alt="">
+                    <h3 class="about__title">Arquitectura y tecnología</h3>
+                    <p class="about__paragraph">Arquitectura y tecnología del prototipo
+                        Las aplicaciones móviles serán Android y compartirán información usando:
+                        1. Tecnología Serverless de Google Firebase: Firestore y Storage para las imágenes.
+                        2. Comunicación peer to peer entre las aplicaciones DG y DM usando Android Services. (Inspirado
+                        en Torrents y primeras versiones de Whatsapp)</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/paint.svg" class="about__icon" alt="">
+                    <h3 class="about__title">Almacenamiento</h3>
+                    <p class="about__paragraph"> Se basará en documentos no estructurados (json o hash tables). Los documentos
+                        serán:
+                        1. store.doc: contendrá la información de la tienda y de todos los productos que oferta.
+                        2. customer.doc: contendrá la información del cliente y de todos sus pedidos.
+                        La aplicación DG tendrá locamente su store.doc y versiones reducidas de documentos customer.doc de
+                        sus clientes.
+                        La aplicación DM tendrá locamente su customer.doc y versiones reducidas de documentos store.doc
+                        de sus tiendas.
+                        Las versiones reducidas de documentos tendrán solo la información relevante para cada tipo de
+                        aplicacione DG o DM. Por ejemplo customer.doc en DG solo tendra informacion de los pedidos
+                        realizados a su tienda.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/coffe-bean.svg" class="about__icon" alt="">
+                    <h3 class="about__title">Geolocalización.</h3>
+                    <p class="about__paragraph">
+                        Tanto el cliente en DM como el Negocio en DG deben indicar su domicilio y este tiene que ser
+                        reconocido por google maps.
+                        El negocio debería poder indicar su zona de reparto tanto por código postal o indicación del área de
+                        influencia (como en idealista).
+                        El trabajo incluye guardar la información en la base de datos e implementar un método de búsqueda de
+                        negocios en DM para encontrar los negocios del área de influencia del cliente.
+                        Costo estimado 200 euros. </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+            <div class="knowledge__texts">
+                <h2 class="subtitle">Barriosapp tu mejor opción</h2>
+                <p class="knowledge__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus rem earum distinctio ea quidem veniam fugiat provident unde tempore labore neque aspernatur, quaerat dolorem exercitationem necessitatibus laboriosam voluptates expedita tenetur?</p>
+            <a href="#" class="cta">Entra y prueba ya</a>
+            </div>
+            <figure class="knowledge__picture">
+                <img src="./images/hortalizas.jpg" class="knowledge__img=">
+            </figure>
+            </div>
+       
+            <section class="price container">
+                <h2 class="subtitle">Obten el plan perfecto que se adapte a tu negocio</h2>
+    
+                <div class="price__table">
+                    <div class="price__element">
+                        <p class="price__name">Flexbox</p>
+                        <h3 class="price__price">Free</h3>
+    
+                        <div class="price__items">
+                            <p class="price__features">Flexbox</p>
+                            <p class="price__features">Layouts</p>
+                            <p class="price__features">Responsive</p>
+                        </div>
+    
+                        <a href="#" class="price__cta">Empieza ahora</a>
+                    </div>
+    
+    
+                    <div class="price__element price__element--best">
+                        <p class="price__name">Grid</p>
+                        <h3 class="price__price">$30/mes</h3>
+    
+                        <div class="price__items">
+                            <p class="price__features">Grid</p>
+                            <p class="price__features">Implicit Grid</p>
+                            <p class="price__features">Responsive</p>
+                        </div>
+    
+                        <a href="#" class="price__cta">Empieza ahora</a>
+                    </div>
+    
+    
+                    <div class="price__element">
+                        <p class="price__name">Animaciones</p>
+                        <h3 class="price__price">$40/mes</h3>
+    
+                        <div class="price__items">
+                            <p class="price__features">Animation</p>
+                            <p class="price__features">Transition</p>
+                            <p class="price__features">Render Website</p>
+                        </div>
+    
+                        <a href="#" class="price__cta">Empieza ahora</a>
+                    </div>
+    
+    
+                </div>
+                
+        </section> 
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi name is pepito, <span class="testimony__experience">cliente de barriosapp</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aperiam optio voluptate quod hic. Nemo aliquam ipsam delectus quas</p>
+                 </div>
+
+                 <figure class="testimony__picture">
+                    <img src="./images/jeana-bala-m_bhleL3T08-unsplash.jpg" class="testimony__img">
+                 </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi name is manolo, <span class="testimony__experience">cliente de barriosapp</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aperiam optio voluptate quod hic. Nemo aliquam ipsam delectus quas</p>
+                 </div>
+
+                 <figure class="testimony__picture">
+                    <img src="./images/eduardo-soares-e4EmPx91Aj4-unsplash.png" class="testimony__img">
+                 </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi name is kiko, <span class="testimony__experience">cliente de barriosapp</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aperiam optio voluptate quod hic. Nemo aliquam ipsam delectus quas</p>
+                 </div>
+
+                 <figure class="testimony__picture">
+                    <img src="./images/firda-faradiba-mm4AUIppAlk-unsplash.jpg" class="testimony__img">
+                 </figure>
+                </section>
+
+                <img src="./images/rightarrow.svg"  class="testimony__arrow" id="next">
+         </div>
+
+         <section class="questions container">
+            <h2 class="subtitle">¿Como funciona?</h2>
+            <p class="questions__paragraph">Pantalla Nuevo cliente
+                El nombre de la tienda es el que verán las aplicaciones clientes.
+                El correo electrónico es la clave única de la tienda.
+                La dirección postal debería ser un link de google maps..</p>
+
+            <section class="questions__container">
+   
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Como hago mi pedido?</h2>
+                <p class="questions__copy">Pantalla de Pedido
+                    Existirá un chat en vivo para comunicarse con el comerciante al
+                    que se le hace el pedido.
+                    Una vez marcado como recibido podrá evaluarse el producto y/o el
+                    pedido de 1 a 5 estrellas.</p>
+                <a href="#" class="cta">Aprende ahora</a>
+
+            </section>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title"> Practico, rapido y seguro!
+                        <span class="questions__arrow">
+                            <img src="./images/arrowup.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad fugit minima esse aspernatur amet, illo laborum deleniti nisi nihil sint. Rerum, dolore ducimus maiores sunt quae aut nostrum fugiat?</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Contactanos para aclarar cualquier duda?
+                        <span class="questions__arrow">
+                            <img src="./images/arrowup.svg" class="questions__img">
+                        </span>
+                    </h3>
+                    <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ad fugit minima esse aspernatur amet, illo laborum deleniti nisi nihil sint. Rerum, dolore ducimus maiores sunt quae aut nostrum fugiat?</p>
+                    </div>
+                </article>
+               
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Como podemos mejorar?
+                            <span class="questions__arrow">
+                                <img src="./images/arrowup.svg" class="questions__img">
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?</p>
+                    </div>
+                </article>
+            
+            </section>
+        
+        </section>
+      
+    </section>
+    
+</main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class=" nav nav--footer">
+                <h2 class="3footer__title">Barriosapp</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+
+                </ul>
+
+                <form class="footer__form"></form>
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook-circle.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Barriosapp </h3>
+
+
+        </section>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
